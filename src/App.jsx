@@ -48,7 +48,7 @@ const services = [
   {
     icon: Monitor,
     title: "PC & Mac Support",
-    text: "Slow laptops, updates, setup, repairs, troubleshooting and general help.",
+    text: "Slow laptops, updates, setup, troubleshooting and general help.",
   },
   {
     icon: Wifi,
@@ -161,7 +161,7 @@ export default function GMTSTechSupportWebsite() {
             <a href="#contact" className="hover:text-white">Contact</a>
           </nav>
           <Button asChild className="rounded-2xl bg-blue-500 px-5 hover:bg-blue-400">
-            <a href="tel:+447780241176">Call Greg</a>
+            <a href="tel:+447780241176" className="whitespace-nowrap">Call Greg</a>
           </Button>
         </div>
       </header>
@@ -183,7 +183,7 @@ export default function GMTSTechSupportWebsite() {
                 Clear, calm help for your home tech.
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300 md:text-xl">
-                PC, Mac, Wi‑Fi, printers, email, phones, smart TVs and everyday technology support across Kemnay, Inverurie, Aberdeen and surrounding areas.
+                PC, Mac, Wi‑Fi, printers, email, phones, smart TVs and everyday technology support across Kemnay, Inverurie and surrounding Aberdeenshire areas.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Button asChild size="lg" className="rounded-2xl bg-blue-500 px-7 hover:bg-blue-400">
@@ -196,7 +196,7 @@ export default function GMTSTechSupportWebsite() {
               <div className="mt-8 grid max-w-xl grid-cols-1 gap-3 text-sm text-slate-300 sm:grid-cols-3">
                 <div className="flex items-center gap-2"><Home className="h-4 w-4 text-blue-300" /> Home visits</div>
                 <div className="flex items-center gap-2"><Clock className="h-4 w-4 text-blue-300" /> Flexible times</div>
-                <div className="flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-blue-300" /> Patient support</div>
+                <div className="flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-blue-300" /> Clear advice</div>
               </div>
             </motion.div>
 
@@ -209,7 +209,7 @@ export default function GMTSTechSupportWebsite() {
               <Card className="rounded-[2rem] border-white/10 bg-white/10 shadow-2xl backdrop-blur-xl">
                 <CardContent className="p-6 md:p-8">
                   <div className="rounded-[1.5rem] bg-slate-900 p-6 ring-1 ring-white/10">
-                    <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-300">Most common fixes</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-300">Most common issues</p>
                     <div className="mt-6 space-y-4">
                       {problems.slice(0, 6).map((problem) => (
                         <div key={problem} className="flex items-start gap-3 rounded-2xl bg-white/5 p-4">
@@ -225,7 +225,7 @@ export default function GMTSTechSupportWebsite() {
           </div>
         </section>
 
-        <section id="services" className="bg-white px-5 py-20 text-slate-950">
+        <section id="services" className="scroll-mt-24 bg-white px-5 py-20 text-slate-950">
           <div className="mx-auto max-w-7xl">
             <div className="max-w-3xl">
               <p className="font-semibold text-blue-600">Services</p>
@@ -250,7 +250,7 @@ export default function GMTSTechSupportWebsite() {
           </div>
         </section>
 
-        <section className="bg-slate-50 px-5 py-20 text-slate-950">
+        <section className="bg-slate-100 px-5 py-20 text-slate-950">
           <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr]">
             <div>
               <p className="font-semibold text-blue-600">Common problems</p>
@@ -270,7 +270,7 @@ export default function GMTSTechSupportWebsite() {
           </div>
         </section>
 
-        <section id="pricing" className="bg-white px-5 py-20 text-slate-950">
+        <section id="pricing" className="scroll-mt-24 bg-white px-5 py-20 text-slate-950">
           <div className="mx-auto max-w-7xl">
             <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
               <div className="max-w-2xl">
@@ -295,7 +295,7 @@ export default function GMTSTechSupportWebsite() {
           </div>
         </section>
 
-        <section id="about" className="bg-slate-950 px-5 py-20">
+        <section id="about" className="scroll-mt-24 bg-slate-950 px-5 py-20">
           <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr]">
             <Card className="rounded-[2rem] border-white/10 bg-white/10 text-white shadow-xl">
               <CardContent className="p-8">
@@ -329,7 +329,7 @@ export default function GMTSTechSupportWebsite() {
           </div>
         </section>
 
-        <section className="bg-white px-5 py-20 text-slate-950">
+        {/* <section className="bg-white px-5 py-20 text-slate-950">
           <div className="mx-auto max-w-7xl">
             <div className="max-w-3xl">
               <p className="font-semibold text-blue-600">Reviews</p>
@@ -349,7 +349,7 @@ export default function GMTSTechSupportWebsite() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section id="contact" className="bg-blue-600 px-5 py-20 text-white">
           <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1fr_0.9fr] md:items-center">
@@ -380,7 +380,7 @@ export default function GMTSTechSupportWebsite() {
                 </div>
                 <div className="flex items-start gap-4">
                   <MapPin className="mt-1 h-5 w-5 text-blue-600" />
-                  <div><p className="font-bold">Area</p><p className="text-slate-600">Kemnay, Inverurie, Aberdeen & nearby Aberdeenshire areas</p></div>
+                  <div><p className="font-bold">Area</p><p className="text-slate-600">Kemnay, Inverurie & nearby Aberdeenshire areas</p></div>
                 </div>
                 <div className="flex items-start gap-4">
                   <MessageCircle className="mt-1 h-5 w-5 text-blue-600" />
