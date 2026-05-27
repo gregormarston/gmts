@@ -106,8 +106,8 @@ const pricing = [
   },
   {
     title: "Standard Support",
-    price: "£25/hr",
-    detail: "Home visits, setup, troubleshooting and repairs.",
+    price: "£20/hr",
+    detail: "Home visits, setup, troubleshooting and guidance.",
   },
   {
     title: "Remote Support",
@@ -315,10 +315,10 @@ export default function GMTSTechSupportWebsite() {
               {[
                 "Computer Science background",
                 "Experience with Windows, Mac, iPhone and Android",
-                "Patient explanations without jargon",
+                "Clear explanations without jargon",
                 "Local home visits available",
                 "Practical support for everyday tech issues",
-                "Help for homes, volunteers and small organisations",
+                "Help for homes and small organisations",
               ].map((point) => (
                 <div key={point} className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-5">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue-300" />
