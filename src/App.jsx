@@ -136,7 +136,14 @@ export default function GMTSTechSupportWebsite() {
     <div className="min-h-screen bg-slate-950 text-white">
       <header className="sticky top-0 z-40 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
-          <a href="#top" className="flex items-center gap-3">
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="flex items-center gap-3"
+          >
             <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/15 ring-1 ring-blue-400/30">
               <Laptop className="h-7 w-7 text-blue-400" />
             </div>
@@ -166,7 +173,7 @@ export default function GMTSTechSupportWebsite() {
         </div>
       </header>
 
-      <main id="top">
+      <main>
         <section className="relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.24),transparent_35%),radial-gradient(circle_at_bottom_left,rgba(14,165,233,0.14),transparent_40%)]" />
           <div className="relative mx-auto grid max-w-7xl gap-12 px-5 py-20 md:grid-cols-[1.1fr_0.9fr] md:py-28">
