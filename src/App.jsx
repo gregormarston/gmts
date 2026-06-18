@@ -19,6 +19,7 @@ import {
   Home,
   ArrowRight,
   Laptop,
+  ShoppingCart,
 } from "lucide-react";
 
 const Button = ({ children, className = "", asChild, ...props }) => {
@@ -76,9 +77,9 @@ const services = [
     text: "Scam email advice, antivirus checks, password hygiene and safer account settings.",
   },
   {
-    icon: HardDrive,
-    title: "Backup & Data Transfer",
-    text: "Move files, photos and documents safely between old and new devices.",
+    icon: ShoppingCart,
+    title: "Buying New Devices",
+    text: "Advice and recommendations for laptops, phones, printers, Wi-Fi equipment and other technology.",
   },
   {
     icon: Tv,
@@ -311,7 +312,7 @@ export default function GMTSTechSupportWebsite() {
                 </div>
                 <h2 className="mt-8 text-4xl font-bold tracking-tight">Hi, I’m Greg.</h2>
                 <p className="mt-5 text-lg leading-8 text-slate-300">
-                  I’m a Computer Science graduate based in Kemnay, offering friendly local technology support for homes and small organisations across Aberdeenshire.
+                  I’m a Computer Science graduate based in Kemnay, providing friendly local support for computers, phones, Wi-Fi and home technology across Aberdeenshire.
                 </p>
                 <p className="mt-4 text-lg leading-8 text-slate-300">
                   My aim is simple: help you get your technology working, explain things clearly and make the process feel less stressful.
@@ -325,7 +326,7 @@ export default function GMTSTechSupportWebsite() {
                 "Clear explanations without jargon",
                 "Local home visits available",
                 "Practical support for everyday tech issues",
-                "Help for homes and small organisations",
+                "Friendly and reliable support",
               ].map((point) => (
                 <div key={point} className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-5">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue-300" />
